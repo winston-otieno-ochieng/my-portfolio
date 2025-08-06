@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact – Winston Ochieng</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo" >Winston</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Project</a>
+      <a href="labs.html">Lab Challenges</a>
+      <a href="#" class="active">Contact</a>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-content">
+      <h1>Contact Me</h1>
+      <p>If you have any questions or collaboration ideas, feel free to reach out!</p>
+      <form class="contact-form" action="mailto:Winstoneo66@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", function (e) {
+    alert("✅ Thanks for reaching out, Winston will get back to you soon!");
+  });
+</script>
+  <footer>
+    <p>&copy; 2023 Winston Ochieng. All rights reserved.</p>
+    <p>Follow me on <a href="https://www.linkedin.com/in/winston-otieno-ochieng" target="_blank">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
